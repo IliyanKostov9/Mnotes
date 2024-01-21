@@ -10,6 +10,11 @@
       "StackName": "amplify-mnotes-prod-225528",
       "StackId": "arn:aws:cloudformation:eu-west-1:512617552494:stack/amplify-mnotes-prod-225528/3ebfb6e0-b7d6-11ee-b769-02b9ad3baae1",
       "AmplifyAppId": "d1wf6zu8dkq0bc"
+    },
+    "categories": {
+      "api": {
+        "mnotes": {}
+      }
     }
   }
 }
