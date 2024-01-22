@@ -16,5 +16,30 @@
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
     }
+  },
+  "function": {
+    "LambdaTestPython": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_LambdaTestPython_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "LambdaTestPython"
+        }
+      ]
+    },
+    "AMPLIFY_function_LambdaTestPython_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "LambdaTestPython"
+        }
+      ]
+    }
   }
 }

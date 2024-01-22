@@ -14,6 +14,12 @@
     "categories": {
       "api": {
         "mnotes": {}
+      },
+      "function": {
+        "LambdaTestPython": {
+          "deploymentBucketName": "amplify-mnotes-prod-225528-deployment",
+          "s3Key": "amplify-builds/LambdaTestPython-61783857416647786964-build.zip"
+        }
       }
     }
   }
