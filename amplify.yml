@@ -1,0 +1,31 @@
+version: 1
+backend:
+  phases:
+    preBuild:
+      commands:
+        - "mkdir -p ~/.local/bin"
+        - "pip3 install --user pipenv virtualenv"
+        - "export PATH=$PATH:~/.local/bin"
+    build:
+      commands:
+        - "nvm install 18.17.0"
+        - "nvm use 18.17.0"
+        - "# Execute Amplify CLI with the helper script"
+        - amplifyPush --simple
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - "nvm install 18.17.0"
+        - "nvm use 18.17.0"
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
