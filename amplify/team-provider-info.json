@@ -18,8 +18,11 @@
       "function": {
         "LambdaTestPython": {
           "deploymentBucketName": "amplify-mnotes-prod-225528-deployment",
-          "s3Key": "amplify-builds/LambdaTestPython-61783857416647786964-build.zip"
+          "s3Key": "amplify-builds/LambdaTestPython-455351536174642f4d2f-build.zip"
         }
+      },
+      "auth": {
+        "mnotes": {}
       }
     }
   }
