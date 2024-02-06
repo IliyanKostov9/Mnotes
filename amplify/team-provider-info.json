@@ -23,6 +23,9 @@
       },
       "auth": {
         "mnotes": {}
+      },
+      "storage": {
+        "s3mnotesstorage": {}
       }
     }
   }

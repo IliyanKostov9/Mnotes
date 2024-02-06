@@ -4,7 +4,7 @@ import config from "@/amplifyconfiguration.json";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import { Amplify } from "aws-amplify";
-import { SignUpFormFields } from "./components/signup/SignUpFormFields";
+import { SignUpFormFields } from "../components/signup/SignUpFormFields";
 
 Amplify.configure(config, { ssr: false });
 

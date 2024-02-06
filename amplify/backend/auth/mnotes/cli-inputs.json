@@ -3,7 +3,7 @@
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "mnotes859a412e",
+    "resourceNameTruncated": "mnotesb3b56aa7",
     "userPoolName": "mnotes",
     "autoVerifiedAttributes": [
       "email"
@@ -25,9 +25,9 @@
       "Requires Uppercase"
     ],
     "requiredAttributes": [
+      "birthdate",
       "email",
       "picture",
-      "profile",
       "name"
     ],
     "aliasAttributes": [],
@@ -35,9 +35,9 @@
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "mnotes859a412e_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "mnotesb3b56aa7_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "859a412e",
+    "sharedId": "b3b56aa7",
     "resourceName": "mnotes",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",
@@ -50,6 +50,13 @@
     "adminQueries": false,
     "thirdPartyAuth": false,
     "authProviders": [],
+    "hostedUI": true,
+    "hostedUIDomainName": "oabksds4t1it",
+    "authProvidersUserPool": [
+      "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid profile email\",\"AttributeMapping\":{\"birthdate\":\"birthdays\",\"email\":\"email\",\"picture\":\"picture\",\"name\":\"name\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000\"],\"LogoutURLs\":[\"http://localhost:3000\"]}",
     "usernameCaseSensitive": false,
     "useEnabledMfas": true,
     "authRoleArn": {

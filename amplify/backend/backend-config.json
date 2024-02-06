@@ -36,12 +36,14 @@
           "passwordPolicyMinLength": 8
         },
         "signupAttributes": [
+          "BIRTHDATE",
           "EMAIL",
           "PICTURE",
-          "PROFILE",
           "NAME"
         ],
-        "socialProviders": [],
+        "socialProviders": [
+          "GOOGLE"
+        ],
         "usernameAttributes": [
           "EMAIL"
         ],
