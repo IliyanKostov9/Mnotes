@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "{\"createdOn\":\"Windows\",\"createdBy\":\"Amplify\",\"createdWith\":\"12.10.1\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
+  "Description": "{\"createdOn\":\"Linux\",\"createdBy\":\"Amplify\",\"createdWith\":\"12.10.1\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
   "Parameters": {
     "CloudWatchRule": {
       "Type": "String",
@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "LambdaTestPython",
+            "MNotesAuthRegisterUserLambda",
             {
               "Fn::Join": [
                 "",
                 [
-                  "LambdaTestPython",
+                  "MNotesAuthRegisterUserLambda",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "mnotesLambdaRole2eb62aa8",
+            "mnotesLambdaRolef8886e1e",
             {
               "Fn::Join": [
                 "",
                 [
-                  "mnotesLambdaRole2eb62aa8",
+                  "mnotesLambdaRolef8886e1e",
                   "-",
                   {
                     "Ref": "env"

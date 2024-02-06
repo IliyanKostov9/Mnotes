@@ -15,12 +15,13 @@ export const SignUpFormFields = () => {
     imageName: defaultImageName,
   });
 
-  const handleInputChange = (name) => (e) => {
-    setFormState((prevState) => ({
-      ...prevState,
-      [name]: e.target.value,
-    }));
-  };
+  const handleInputChange =
+    (name: string) => (e: { target: { value: any } }) => {
+      setFormState((prevState) => ({
+        ...prevState,
+        [name]: e.target.value,
+      }));
+    };
 
   const validateEmail = useMemo(() => {
     const re = /\S+@\S+\.\S+/;

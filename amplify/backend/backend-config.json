@@ -1,5 +1,19 @@
 {
   "api": {
+    "MNotesAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "MNotesAuthRegisterUserLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "mnotes": {
       "dependsOn": [],
       "output": {
@@ -56,26 +70,27 @@
     }
   },
   "function": {
-    "LambdaTestPython": {
+    "MNotesAuthRegisterUserLambda": {
       "build": true,
+      "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_LambdaTestPython_deploymentBucketName": {
+    "AMPLIFY_function_MNotesAuthRegisterUserLambda_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "LambdaTestPython"
+          "resourceName": "MNotesAuthRegisterUserLambda"
         }
       ]
     },
-    "AMPLIFY_function_LambdaTestPython_s3Key": {
+    "AMPLIFY_function_MNotesAuthRegisterUserLambda_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "LambdaTestPython"
+          "resourceName": "MNotesAuthRegisterUserLambda"
         }
       ]
     }
