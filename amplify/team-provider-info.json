@@ -14,8 +14,7 @@
     },
     "categories": {
       "api": {
-        "mnotes": {},
-        "MNotesAPI": {}
+        "mnotes": {}
       },
       "auth": {
         "mnotes": {}
@@ -26,7 +25,7 @@
       "function": {
         "MNotesAuthRegisterUserLambda": {
           "deploymentBucketName": "amplify-mnotes-prod-225528-deployment",
-          "s3Key": "amplify-builds/MNotesAuthRegisterUserLambda-6434644565722b615868-build.zip"
+          "s3Key": "amplify-builds/MNotesAuthRegisterUserLambda-5a74686b503153795659-build.zip"
         }
       }
     }

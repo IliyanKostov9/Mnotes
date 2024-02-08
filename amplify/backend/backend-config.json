@@ -1,19 +1,5 @@
 {
   "api": {
-    "MNotesAPI": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "MNotesAuthRegisterUserLambda"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    },
     "mnotes": {
       "dependsOn": [],
       "output": {
