@@ -1,5 +1,3 @@
-import { StorageManagerProps } from "@aws-amplify/ui-react-storage";
-
 export class MaskData {
   private static generateRandomHex(length: number = 8): string {
     const randomBytes = new Uint8Array(length / 2);
