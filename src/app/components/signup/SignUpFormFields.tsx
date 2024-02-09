@@ -53,6 +53,7 @@ export const SignUpFormFields = () => {
         errorMessage="Please enter your name."
         onChange={handleInputChange("name")}
       />
+
       <TextField
         name="birthdate"
         label="Birthdate"
