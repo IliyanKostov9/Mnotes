@@ -1,5 +1,5 @@
-import json
 import logging
+
 from validateRegister.validate_user import User
 
 logger = logging.getLogger(__name__)
@@ -10,8 +10,6 @@ def lambda_handler(event, context):
 
     logger.info("Received an event from Pre-signed up user:")
     logger.info(event)
-    status_code: int = 400
-    status_message: str = "Error, birth date is invalid!"
 
     user_attributes = event["request"]["userAttributes"]
 
@@ -27,4 +25,11 @@ def lambda_handler(event, context):
         status_code = 200
         status_message = "Sucess, birth date is valid now!"
 
-    return {"statusCode": status_code, "body": json.dumps(status_message)}
+        logger.info(
+            "Sending response to user with code: %s and message %s",
+            status_code,
+            status_message,
+        )
+        return event
+
+    raise AttributeError("Error: birth date is invalid!")

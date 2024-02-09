@@ -25,7 +25,7 @@
       "function": {
         "MNotesAuthRegisterUserLambda": {
           "deploymentBucketName": "amplify-mnotes-prod-225528-deployment",
-          "s3Key": "amplify-builds/MNotesAuthRegisterUserLambda-5a74686b503153795659-build.zip"
+          "s3Key": "amplify-builds/MNotesAuthRegisterUserLambda-4532496848396c4f3256-build.zip"
         }
       }
     }
