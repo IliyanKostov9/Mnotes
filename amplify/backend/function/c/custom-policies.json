@@ -1,0 +1,6 @@
+[
+  {
+    "Action": ["ssm:GetParameter"],
+    "Resource": ["arn:aws:ssm:eu-west-1:512617552494:parameter/infisical/*"]
+  }
+]

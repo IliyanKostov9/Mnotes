@@ -48,3 +48,7 @@ pipenv install
 ```
 
 Connect the MNotesAuthRegisterUserLambda lambda to your AWS Cognito User pool properties as a Pre sign-up trigger Lambda trigger (currently only done manually via the web UI)
+
+Connect the MNotesAuthRegisterUserLambda lambda to your AWS Cognito User pool properties as a Post login trigger Lambda trigger (currently only done manually via the web UI)
+
+Create 2 new parameters store entires for the lambda function to be able to access the secrets `/infisical/client_id`,`/infisical/client_secret`,`/infisical/project_id`

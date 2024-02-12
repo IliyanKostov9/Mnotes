@@ -1,0 +1,21 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "infisicalClientId",
+      "environmentVariableName": "INFISICAL_CLIENT_ID"
+    },
+    {
+      "cloudFormationParameterName": "infisicalClientSecret",
+      "environmentVariableName": "INFISICAL_CLIENT_SECRET"
+    },
+    {
+      "cloudFormationParameterName": "projectId",
+      "environmentVariableName": "PROJECT_ID"
+    },
+    {
+      "cloudFormationParameterName": "fromEmail",
+      "environmentVariableName": "FROM_EMAIL"
+    }
+  ]
+}

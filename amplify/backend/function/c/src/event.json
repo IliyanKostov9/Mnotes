@@ -1,0 +1,25 @@
+{
+  "version": "1",
+  "region": "eu-west-1",
+  "userPoolId": "eu-west-1_YcUEseaYH",
+  "userName": "fbcef13d-ee84-461b-8389-728001e5ecf1",
+  "callerContext": {
+    "awsSdkVersion": "aws-sdk-unknown-unknown",
+    "clientId": "5lhuvchgd737c5uuphnj9s4a9n"
+  },
+  "triggerSource": "PostAuthentication_Authentication",
+  "request": {
+    "userAttributes": {
+      "sub": "fbcef13d-ee84-461b-8389-728001e5ecf1",
+      "cognito:email_alias": "iliyan.kostov@email.ikostov.org",
+      "cognito:user_status": "CONFIRMED",
+      "birthdate": "2022-02-12",
+      "email_verified": "true",
+      "name": "Iliyan",
+      "email": "iliyan.kostov@email.ikostov.org",
+      "picture": "2d0d83a3a03ac97d9c609527842693c1ae0b480d.jpg"
+    },
+    "newDeviceUsed": "False"
+  },
+  "response": {}
+}

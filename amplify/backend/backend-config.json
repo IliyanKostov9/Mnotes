@@ -61,6 +61,17 @@
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "MNotesPostAuthLoginSendGridLambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "mnotesLayerSendgrid": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "LambdaLayer"
     }
   },
   "parameters": {
@@ -77,6 +88,70 @@
         {
           "category": "function",
           "resourceName": "MNotesAuthRegisterUserLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_MNotesPostAuthLoginSendGridLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "MNotesPostAuthLoginSendGridLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_MNotesPostAuthLoginSendGridLambda_fromEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "MNotesPostAuthLoginSendGridLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_MNotesPostAuthLoginSendGridLambda_infisicalClientId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "MNotesPostAuthLoginSendGridLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_MNotesPostAuthLoginSendGridLambda_infisicalClientSecret": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "MNotesPostAuthLoginSendGridLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_MNotesPostAuthLoginSendGridLambda_projectId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "MNotesPostAuthLoginSendGridLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_MNotesPostAuthLoginSendGridLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "MNotesPostAuthLoginSendGridLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_mnotesLayerSendgrid_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mnotesLayerSendgrid"
+        }
+      ]
+    },
+    "AMPLIFY_function_mnotesLayerSendgrid_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mnotesLayerSendgrid"
         }
       ]
     }

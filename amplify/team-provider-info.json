@@ -25,7 +25,19 @@
       "function": {
         "MNotesAuthRegisterUserLambda": {
           "deploymentBucketName": "amplify-mnotes-prod-225528-deployment",
-          "s3Key": "amplify-builds/MNotesAuthRegisterUserLambda-4532496848396c4f3256-build.zip"
+          "s3Key": "amplify-builds/MNotesAuthRegisterUserLambda-6150776265526a575632-build.zip"
+        },
+        "MNotesPostAuthLoginSendGridLambda": {
+          "deploymentBucketName": "amplify-mnotes-prod-225528-deployment",
+          "s3Key": "amplify-builds/MNotesPostAuthLoginSendGridLambda-6f6d4873507437457741-build.zip",
+          "infisicalClientId": "/infisical/client_id",
+          "infisicalClientSecret": "/infisical/client_secret",
+          "projectId": "/infisical/project_id",
+          "fromEmail": "M.Notes@hotmail.com"
+        },
+        "mnotesLayerSendgrid": {
+          "deploymentBucketName": "amplify-mnotes-prod-225528-deployment",
+          "s3Key": "amplify-builds/mnotesLayerSendgrid-LambdaLayerVersionc4cad383-build.zip"
         }
       }
     }
